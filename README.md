@@ -7,33 +7,32 @@
 [![Made with Claude](https://img.shields.io/badge/Made%20with-Claude-orange.svg)](https://claude.ai)
 
 ---
+
 # fullstack-ai-app-builder Skill
 
-快速搭建全栈AI应用的完整方法论。
+A comprehensive methodology for rapidly building and deploying full-stack AI applications.
 
-## 包含内容
+## What's Included
 
-- **SKILL.md** - 完整的技能说明（必需）
+- **SKILL.md** — Complete skill specifications and core logic (Required).
 
-## 如何使用
+## How to Use
 
-1. 将此压缩包解压
-2. 上传到Claude Skills中
-3. 在对话中直接使用
+1. **Extract** the provided compressed package.
+2. **Upload** the files to your **Claude Skills** (or other AI Agent platforms).
+3. **Deploy** by interacting directly with the agent in your chat session.
 
-## 关键功能
+## Key Features
 
-- 从想法到上线的完整指导
-- 无需编程基础即可快速搭建应用
-- 包含所有必需的技术栈决策
-- 实战导向，包含真实项目案例
-
-Here is a polished English translation tailored for a GitHub `README.md`. I’ve structured it to highlight both the professional background and the technical value proposition.
+- **End-to-End Guidance:** From initial concept ideation to final production launch.
+- **Low-Code Friendly:** Build powerful applications rapidly, even without a deep programming background.
+- **Architectural Clarity:** Includes all necessary tech-stack decisions and configurations.
+- **Practical & Actionable:** Focused on real-world implementation with hands-on project cases.
 
 ---
 
 ## 👤 About the Author
-**Tech Director | Shanghai, China**
+**Project Director | Shanghai, China**
 A seasoned technology leader with a proven track record of architecting and deploying end-to-end full-stack systems from 0 to 1. By integrating advanced **LLM (Large Language Models)** into enterprise workflows, I have successfully driven significant cost reductions and operational efficiency gains.
 
 ---
