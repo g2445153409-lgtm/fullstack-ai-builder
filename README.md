@@ -91,5 +91,5 @@ MIT — use it, fork it, ship with it.
 ---
 
 <p align="center">
-  Built for people who ship. ⚡
+  Built for people who work harder. ⚡
 </p>
