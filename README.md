@@ -7,181 +7,50 @@
 [![Made with Claude](https://img.shields.io/badge/Made%20with-Claude-orange.svg)](https://claude.ai)
 
 ---
+# fullstack-ai-app-builder Skill
 
-## The Problem Nobody Talks About
+快速搭建全栈AI应用的完整方法论。
 
-You have an idea. A real one. Maybe it's an internal tool that would save your team 10 hours a week, or a SaaS you've been sketching in Notion for months.
+## 包含内容
 
-Then you open a blank terminal and... nothing happens.
+- **SKILL.md** - 完整的技能说明（必需）
 
-Not because you can't code. Because **the gap between "idea" and "deployed product" is filled with decisions nobody warned you about**: Which database? Which AI provider? How do I handle auth? Do I even need a backend?
+## 如何使用
 
-Most tutorials skip straight to the fun part. This repo doesn't.
+1. 将此压缩包解压
+2. 上传到Claude Skills中
+3. 在对话中直接使用
 
----
+## 关键功能
 
-## What This Is
+- 从想法到上线的完整指导
+- 无需编程基础即可快速搭建应用
+- 包含所有必需的技术栈决策
+- 实战导向，包含真实项目案例
 
-`fullstack-ai-builder` is a **battle-tested methodology** for shipping AI-powered full-stack applications — fast.
-
-It's the distilled playbook from building dozens of internal tools and AI-integrated products, optimized for:
-
-- 🧑‍💼 **Founders** who need to validate ideas before hiring engineers
-- ⚡ **Indie hackers** who want to ship, not architect
-- 🏢 **Teams** replacing Excel/WeChat workflows with real software
-- 🤖 **AI-curious developers** who want to integrate LLMs without the headache
-
----
-
-## The 3-Phase Framework
-
-### Phase 1 — Clarify (30 min)
-**The "Three Questions" method** that turns vague ideas into precise specs:
-
-```
-Q1: What repetitive task costs you time every week?     → Your pain point
-Q2: What's the ONE feature that solves 80% of it?      → Your MVP
-Q3: Who uses this — 1 person, 10, or 10,000?           → Your architecture
-```
-
-No code until you can answer all three. This single step saves weeks.
-
-### Phase 2 — Design (30 min)
-**Decision trees, not debates.**
-
-```
-Users < 3?        → Single HTML file + localStorage (zero infrastructure)
-Users 4–50?       → Supabase (Postgres + auto-generated API, free tier)
-Users 50–∞?       → Supabase now, migrate later (code barely changes)
-
-Need AI?
-├── Image/OCR     → Qwen-VL (fast in CN) or Gemini 1.5 Pro
-├── Text/Extract  → DeepSeek Chat (90% cheaper than GPT-4, same quality)
-└── Complex RAG   → Claude API
-```
-
-### Phase 3 — Ship (3–6 hours)
-Single-file architecture. No build step. No `npm install`. Drag to Vercel, done.
+Here is a polished English translation tailored for a GitHub `README.md`. I’ve structured it to highlight both the professional background and the technical value proposition.
 
 ---
 
-## The Stack (Covers 90% of Projects)
-
-| Layer | Choice | Why | Free Tier |
-|-------|--------|-----|-----------|
-| Frontend | Vanilla HTML + React (CDN) | Zero config, runs anywhere | ∞ |
-| Database | Supabase | Postgres reliability, REST API auto-generated | 500MB |
-| AI — Vision | Qwen-VL | Fast in mainland CN, generous free quota | 1M tokens/mo |
-| AI — Text | DeepSeek Chat | Best price/performance ratio available today | Pay-as-you-go |
-| Hosting | Vercel | Global CDN, drag-and-drop deploy | ∞ |
-| CDN | Cloudflare | Wrap Vercel for CN speed boost | ∞ |
-
-**First month cost: $0.** Seriously.
+## 👤 About the Author
+**Tech Director | Shanghai, China**
+A seasoned technology leader with a proven track record of architecting and deploying end-to-end full-stack systems from 0 to 1. By integrating advanced **LLM (Large Language Models)** into enterprise workflows, I have successfully driven significant cost reductions and operational efficiency gains.
 
 ---
 
-## Proven Project Patterns (Copy-Paste Ready)
+## 🛠 SKILLS Framework
+I have distilled these battle-tested methodologies into a specialized framework called **SKILLS**. This framework is designed to be plug-and-play with mainstream AI agents like **Claude**.
 
-### Meeting Notes → Action Items (2–3 days)
-```
-Pain:     Paper notes nobody reads
-Stack:    HTML + Supabase + Qwen-VL (OCR) or DeepSeek (text extract)
-AI role:  Extract action items, owners, deadlines from raw notes
-Cost:     ~¥0–5/month in API calls
-```
-
-### Sales CRM (3–5 days)
-```
-Pain:     Customer data scattered across WeChat, Excel, email
-Stack:    HTML + Supabase
-AI role:  Optional — score lead temperature, suggest follow-up timing
-Cost:     $0
-```
-
-### Internal Task Board (1–2 days)
-```
-Pain:     No single view of what's in progress
-Stack:    HTML + Supabase (or localStorage for 1-person use)
-AI role:  Not needed
-Cost:     $0
-```
+### Key Features:
+* **Seamless Integration:** Optimized for creating and deploying intelligent agents in professional environments.
+* **Automated API Management:** Features built-in automatic API key docking to streamline the developer experience.
+* **Localized Optimization (China-Friendly):** Specifically engineered to work reliably within the Chinese network environment **without requiring a VPN (ladder)**. 
+* **Enterprise-Ready:** Ideal for internal distribution, allowing employees and team members to leverage AI power without technical barriers.
 
 ---
 
-## Getting Started
-
-### 1. Answer the Three Questions
-Write them down. Seriously. Don't skip this.
-
-### 2. Pick Your Stack
-Use the decision trees above. The answer is almost always "Supabase + DeepSeek."
-
-### 3. Use the Prompt Template
-```
-I need to build a [system name] for [core use case].
-Primary users: [description]. Current pain: [pain point].
-
-Core features (max 2):
-1. [Feature 1]
-2. [Feature 2]
-
-Tech constraints:
-- Single HTML file
-- React via CDN (no npm)
-- Supabase backend (URL: xxx, Key: xxx)
-- Mobile + desktop responsive
-- [AI provider] for [specific task]
-
-Data model:
-- Main table: [name], fields: [list]
-- Sub-table: [name], fields: [list]
-
-Confirm you understand, then generate the complete code.
-```
-
-### 4. Test in 4 Phases
-```
-☐ Phase 1: Does the UI render? Check console for JS errors (F12)
-☐ Phase 2: Does local storage read/write? Refresh and check persistence
-☐ Phase 3: Does Supabase connect? Check Network tab for API responses
-☐ Phase 4: Does AI return structured data in the expected format?
-```
-
-### 5. Deploy to Vercel
-```
-1. Go to vercel.com
-2. Sign in with GitHub
-3. Click "Add New Project" → "Upload"
-4. Drag your index.html
-5. Done. You have a public URL.
-```
-
----
-
-## AI Prompt Engineering (The Part Most Tutorials Skip)
-
-### The Golden Rule
-**Always constrain the output format before describing the task.**
-
-```
-❌ "Extract the action items from this meeting note"
-✅ "Return ONLY a JSON array. Schema: [{text, owner, due_date, priority}].
-    If a field is unclear, use null. No explanations, no markdown, just JSON.
-    Task: extract action items from the following meeting note: ..."
-```
-
-The difference: one gives you prose, one gives you parseable data.
-
-### Handling Errors Like a Senior Dev
-
-| Symptom | Cause | Fix |
-|---------|-------|-----|
-| White screen | JS error blocking render | F12 → Console → read the red text |
-| `null` from localStorage | `file://` protocol restriction | Use `memStorage` fallback |
-| CORS error | Supabase RLS not configured | Enable Row Level Security in dashboard |
-| AI returns 403 | Wrong API key or quota exceeded | Verify key, check billing dashboard |
-| AI returns 429 | Rate limit hit | Add `setTimeout(fn, 1000)` retry |
-| Mobile layout broken | Missing viewport meta | Add `<meta name="viewport" ...>` |
+### 💡 Why Use This?
+> "The goal is to bridge the gap between complex AI infrastructure and practical business application, making high-performance AI accessible to every employee in the organization."
 
 ---
 
